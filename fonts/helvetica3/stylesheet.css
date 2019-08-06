@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'HelveticaNeue LT 57 Cn';
+    src: url('HelveticaNeueLT-BoldCond.eot');
+    src: url('HelveticaNeueLT-BoldCond.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaNeueLT-BoldCond.woff2') format('woff2'),
+        url('HelveticaNeueLT-BoldCond.woff') format('woff'),
+        url('HelveticaNeueLT-BoldCond.ttf') format('truetype'),
+        url('HelveticaNeueLT-BoldCond.svg#HelveticaNeueLT-BoldCond') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+

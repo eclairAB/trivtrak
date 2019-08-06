@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Helvetica Medium Condensed';
+    src: url('HelveticaMediumCondensedPlain.eot');
+    src: url('HelveticaMediumCondensedPlain.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaMediumCondensedPlain.woff2') format('woff2'),
+        url('HelveticaMediumCondensedPlain.woff') format('woff'),
+        url('HelveticaMediumCondensedPlain.ttf') format('truetype'),
+        url('HelveticaMediumCondensedPlain.svg#HelveticaMediumCondensedPlain') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+

@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'NuberNext';
+    src: url('NuberNext-BlackCondensed.eot');
+    src: url('NuberNext-BlackCondensed.eot?#iefix') format('embedded-opentype'),
+        url('NuberNext-BlackCondensed.woff2') format('woff2'),
+        url('NuberNext-BlackCondensed.woff') format('woff'),
+        url('NuberNext-BlackCondensed.ttf') format('truetype'),
+        url('NuberNext-BlackCondensed.svg#NuberNext-BlackCondensed') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+

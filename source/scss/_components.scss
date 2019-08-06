@@ -1,0 +1,17 @@
+// Core variables and mixins
+@import "components/variables.scss";
+@import "components/mixins.scss";
+@import "components/flipclock.scss";
+// Global CSS
+@import "components/global.scss";
+// Components
+@import "components/call-to-action.scss";
+@import "components/footer.scss";
+@import "components/icons.scss";
+@import "components/masthead.scss";
+@import "components/navbar.scss";
+@import "components/showcase.scss";
+@import "components/testimonials.scss";
+@import 'components/buttons';
+@import 'components/jumbotron';
+@import 'components/sections';

@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Alfa Slab One';
+    src: url('AlfaSlabOne-Regular.eot');
+    src: url('AlfaSlabOne-Regular.eot?#iefix') format('embedded-opentype'),
+        url('AlfaSlabOne-Regular.woff2') format('woff2'),
+        url('AlfaSlabOne-Regular.woff') format('woff'),
+        url('AlfaSlabOne-Regular.ttf') format('truetype'),
+        url('AlfaSlabOne-Regular.svg#AlfaSlabOne-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

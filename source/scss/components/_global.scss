@@ -1,0 +1,358 @@
+body {
+  @include body-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include body-font;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Alfa';
+  src: url('fonts/alfa/fonts/AlfaSlabOne-Regular.eot');
+  src: url('fonts/alfa/fonts/AlfaSlabOne-Regular.eot?#iefix') format('embedded-opentype'),
+      url('fonts/alfa/fonts/AlfaSlabOne-Regular.woff2') format('woff2'),
+      url('fonts/alfa/fonts/AlfaSlabOne-Regular.woff') format('woff'),
+      url('fonts/alfa/fonts/AlfaSlabOne-Regular.ttf') format('truetype'),
+      url('fonts/alfa/fonts/AlfaSlabOne-Regular.svg#AlfaSlabOne-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('fonts/helvetica/HelveticaMediumCondensedPlain.eot');
+  src: url('fonts/helvetica/HelveticaMediumCondensedPlain.eot?#iefix') format('embedded-opentype'),
+      url('fonts/helvetica/HelveticaMediumCondensedPlain.woff2') format('woff2'),
+      url('fonts/helvetica/HelveticaMediumCondensedPlain.woff') format('woff'),
+      url('fonts/helvetica/HelveticaMediumCondensedPlain.ttf') format('truetype'),
+      url('fonts/helvetica/HelveticaMediumCondensedPlain.svg#HelveticaMediumCondensedPlain') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue';
+    src: url('fonts/helvetica2/HelveticaNeue-LightExtObl.eot');
+    src: url('fonts/helvetica2/HelveticaNeue-LightExtObl.eot?#iefix') format('embedded-opentype'),
+        url('fonts/helvetica2/HelveticaNeue-LightExtObl.woff2') format('woff2'),
+        url('fonts/helvetica2/HelveticaNeue-LightExtObl.woff') format('woff'),
+        url('fonts/helvetica2/HelveticaNeue-LightExtObl.ttf') format('truetype'),
+        url('fonts/helvetica2/HelveticaNeue-LightExtObl.svg#HelveticaNeue-LightExtObl') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'NumberNext';
+    src: url('fonts/numbernext/NuberNext-BlackCondensed.eot');
+    src: url('fonts/numbernext/NuberNext-BlackCondensed.eot?#iefix') format('embedded-opentype'),
+        url('fonts/numbernext/NuberNext-BlackCondensed.woff2') format('woff2'),
+        url('fonts/numbernext/NuberNext-BlackCondensed.woff') format('woff'),
+        url('fonts/numbernext/NuberNext-BlackCondensed.ttf') format('truetype'),
+        url('fonts/numbernext/NuberNext-BlackCondensed.svg#NuberNext-BlackCondensed') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue LT 57 Cn';
+    src: url('fonts/helvetica3/HelveticaNeueLT-BoldCond.eot');
+    src: url('fonts/helvetica3/HelveticaNeueLT-BoldCond.eot?#iefix') format('embedded-opentype'),
+        url('fonts/helvetica3/HelveticaNeueLT-BoldCond.woff2') format('woff2'),
+        url('fonts/helvetica3/HelveticaNeueLT-BoldCond.woff') format('woff'),
+        url('fonts/helvetica3/HelveticaNeueLT-BoldCond.ttf') format('truetype'),
+        url('fonts/helvetica3/HelveticaNeueLT-BoldCond.svg#HelveticaNeueLT-BoldCond') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bourton';
+    src: url('../../fonts/bourton/BourtonBase.eot');
+    src: url('../../fonts/bourton/BourtonBase.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/bourton/BourtonBase.woff2') format('woff2'),
+        url('../../fonts/bourton/BourtonBase.woff') format('woff'),
+        url('../../fonts/bourton/BourtonBase.ttf') format('truetype'),
+        url('../../fonts/bourton/BourtonBase.svg#BourtonBase') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*---------------------------------------------------Cmpnents---------------------------------------------------*/
+body {
+
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif, "Bourton";
+  font-weight: normal;
+  font-style: normal;
+}
+
+body#background {
+  background: url('../assets/aaa.png') no-repeat 50% 50% fixed;
+  /*background: url('../assets/vermont2.jpg') no-repeat 50% 50% fixed;*/
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+#h1{
+  color: #fff;
+  font-weight: 900;
+  font-size: 40px;
+  margin: 40px 0px 20px;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+/*---------------------------------------------------timer---------------------------------------------------*/
+#clockdiv{
+  font-family: 'Bourton';
+  color: #fff;
+  font-weight: 100;
+  text-align: center;
+  font-size: 150px;
+  padding-bottom: 50px;
+  height: 350px;
+  border : 3px solid rgba(255, 191, 0, 0.5);
+}
+
+.flip-clock-wrapper {
+    font: normal 11px "Helvetica Neue", Helvetica, sans-serif;
+    -webkit-user-select: none;
+}
+
+.flip-clock-divider {
+  .seconds {
+    .flip-clock-label {
+      right: -100px;
+      color: white;
+      font-family: Bourton;
+      font-size: 15px;
+    }
+  }
+}
+
+.t-start {
+  font-family: 'Bourton';
+  font-weight: 100;
+  font-size: 60px;
+}
+
+#pic {
+  left: 25%;
+  height: 420px;
+  width: 480px;
+  margin-top: 23px;
+}
+/*---------------------------------------------------div layout---------------------------------------------------*/
+.topdiv {
+  height: 90vh;
+}
+
+.a-venue {
+  font-family: 'Bourton';
+  font-weight: 100;
+  font-size: 60px;
+}
+
+#timerdiv {
+  /*height: 400px;*/
+  width: 100%;
+  text-align: center;
+}
+
+#btmdiv {
+  /*height: 300px;*/
+  width: 100%;
+  text-align: center;
+}
+
+#btmdiv_ii {
+  /*height: 700px;*/
+  width: 100%;
+  text-align: center;
+}
+
+#btmdiv_iii {
+  /*height: 300px;*/
+  width: 100%;
+  text-align: center;
+}
+
+#ln {
+  width: 100%;
+}
+
+#a {
+  color:inherit;
+  text-decoration: none;
+}
+a{
+  text-decoration:none;
+}
+a:hover{
+  text-decoration:none;
+}
+
+#ln{
+  .link:hover{
+    color: #ffbf00;
+  }
+}
+
+
+.btn-link {
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.your-style {
+  font-family: 'NuberNext';
+  font-weight: 900;
+  font-style: normal;
+}
+
+.navs-top{
+  background-color: #fff;
+  color:black;
+  font-size: 1vw;
+}
+.navs-buttom{
+  background-color: #ffbf00;
+  color: black;
+  font-weight: 700;
+  width: 100%;
+  font-size: 2vw;
+}
+
+.welcome{
+  text-transform: uppercase;
+  text-align:center;
+  line-height: 0.8;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.welcome1{
+  text-transform: uppercase;
+  text-align:center;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.text-1{
+  font-size: 5vw;
+  color: fff;
+  mix-blend-mode: luminosity;
+  font-family: 'Bourton';
+  font-weight: normal;
+}
+
+.text-2{
+  font-size: 5vw;
+  color: fff;
+  mix-blend-mode: luminosity;
+  font-family: 'Bourton';
+  font-style: normal;
+}
+
+.text-3{
+  font-size: 3vw;
+}
+
+#div-right {
+  position: absolute;
+  left: 50%;
+  height: 250px;
+  width: 250px;
+  float: left;
+}
+
+
+.contact {
+  font-family: 'Bourton';
+  font-weight: 400;
+  color: white;
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+.contact:hover {
+  color: #ffbf00;
+  text-decoration-color: #ffbf00;
+}
+
+ @media (max-width: 500px){
+
+/*  #kerv {
+    font-size: 1px;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+  }*/
+
+  .navs-buttom {
+    background-color: #ffbf00;
+     .text-1{
+      font-size: 11vw;
+    }
+  }
+
+  .topdiv {
+    height: 70vh; 
+  }
+/*---------------------------------timer--------------------------------------*/
+  #pic {
+    left: 25%;
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+
+  #clockdiv{
+    font-family: 'Bourton';
+    color: #fff;
+    font-weight: 100;
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 50px;
+    height: 170px;
+    border : 3px solid rgba(255, 191, 0, 0.5);
+  }
+
+  .t-start {
+    font-family: 'Bourton';
+    font-weight: 100;
+    font-size: 25px;
+  }
+/*---------------------------------timer--------------------------------------*/
+  .a-venue {
+    font-family: 'Bourton';
+    font-weight: 100;
+    font-size: 20px;
+  }
+
+  .contact {
+    font-family: 'Bourton';
+    font-weight: 400;
+    color: white;
+    font-size: 20px;
+    text-decoration: underline;
+  }
+}

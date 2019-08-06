@@ -1,0 +1,81 @@
+/*clock*/
+@media (max-width: 2000px){
+	.clock{
+	zoom: 1.5;
+	}
+}
+
+@media (max-width: 1650px){
+	.clock{
+	zoom: 1.2;
+	}
+}
+
+@media (max-width: 1400px){
+	.clock{
+	zoom: 1;
+	}
+}
+@media (max-width: 1200px){
+	.clock{
+	zoom: 0.8;
+	}
+}
+@media (max-width: 991px){
+	.clock{
+	zoom: 1.5;
+	}
+	 #pic {
+	 	width: 68%;
+	 	height: 100%;
+  	}
+}
+@media (max-width: 850px){
+	.clock{
+	zoom: 1.2;
+	}
+}
+@media (max-width: 700px){
+	.clock{
+	zoom: 1;
+	}
+}
+@media (max-width: 600px){
+	.clock{
+	zoom: 0.8;
+	}
+	.flip-clock-wrapper ul li a div div.inn {
+		font-size: 36px !important;
+	}
+	.flip-clock-divider .flip-clock-label {
+    font-size: 15px !important;
+      -webkit-text-size-adjust: 50%;
+	}
+}
+@media (max-width: 500px){
+	.clock{
+	zoom: 0.7;
+	}
+	#kerv{
+		font-size: 25px;
+      -webkit-text-size-adjust: 50%;
+	}
+}
+@media (max-width: 450px){
+	.clock{
+	zoom: 0.6;
+	}
+}
+@media (max-width: 400px){
+	.clock{
+	zoom: 0.5;
+	}
+}
+
+/*bottom button*/
+/*@media (min-height: 750px), (min-width: 400px) {
+    #ln, #timerdiv, #btmdiv {
+    margin-top: 0px;
+  }
+
+}*/

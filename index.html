@@ -1,0 +1,136 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>Trivtrak</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="source/scss/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+      <!-- <link rel="stylesheet" href="compiled/flipclock.css"> -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="compiled/flipclock.js"></script>  
+
+    <style type="text/css">
+      /*.row{
+        border: 1px solid green;
+      }
+
+      .col {
+        border: 1px solid red;
+      }
+
+      .container {
+        border : 3px dotted blue;
+      }*/
+    </style>
+  </head>
+  <body id="background" style="-webkit-text-size-adjust: 100%;">
+
+    <div class="col py-3 welcome justify-content-center col-md-12 col-xs-12 navs-buttom">
+      <span class="text-1">VT state trivia</span><br/>
+      <span class="text-1">championship</span>
+    </div>
+
+    <div class="align-items-center" class="topdiv">
+
+      <div class="welcome1 d-xs-block d-lg-none mt-3">
+        <h4 class="display-4 header" style="font-family: 'Bourton'; font-weight: 100; font-size: 25px;">THE BATTLE FOR THE BELT</h4>
+      </div>
+
+      <div class="row no-gutters">
+        <div id="ln" class="col col-12 col-lg-3 col-md-12 col-sm-12 col-xs-12 mb-3 d-flex justify-content-center">
+          <img id="pic" src="source/assets/bbb.png" style="z-index: -1;">
+        </div>
+
+        <div id= "timerdiv" class="col-lg-6 col-md-12 col-sm-12 col-xs-12 pl-4  d-flex flex-column justify-content-center">
+
+          <div>
+            <div class="welcome d-none d-lg-block">
+              <h4 class="display-4 header" style="font-family: 'Bourton'; font-weight: 100; font-size: 75px;">THE BATTLE FOR THE BELT</h4>
+            </div>
+
+            <div id="clockdiv" class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 justify-content-center align-items-center">
+
+              <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 justify-content-center align-items-center">
+                <p class="t-start">TOURNAMENT START</p>
+              </div>
+   
+              <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 justify-content-center align-items-center">
+                <div class="clock d-flex justify-content-center"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="btmdiv" class="row col-md-12 justify-content-center mx-auto col-xs-12">
+        <div id="ln" class="row justify-content-center col-md-12 col-xs-12 align-self-lg-end">
+          <p class="header a-venue">ACTIVATE YOUR VENUE TODAY</p>
+        </div>
+
+        <div id="ln" class="row no-gutters col-md-12 col-xs-12 mb-1 align-items-center justify-content-center">
+          <div class="col-4">  
+            <a id ="a" href="https://trivtrak.com/#/locations" role="button">
+              <button id="kerv" class="button">
+                I Have Trivia
+              </button>
+            </a>
+          </div>
+
+          <div class="col-5">  
+            <a id ="a" href="http://www.catchthemania.com/" role="button">
+              <button id="kerv" class="button">
+                I Don't Have Trivia
+              </button>
+            </a>
+          </div>
+
+          <div class="col-3">  
+            <a id ="a" href="https://trivtrak.com/#/tournaments" role="button">
+              <button id="kerv" class="button">
+                More Info
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="txt-right col col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-2">
+          <a id ="a" href="mailto:bdamon6@gmail.com" role="button">
+            <p class="contact">Contact us</p>
+          </a>
+        </div>
+      </div>
+
+    </div>
+        <!-- <div class="clock"> </div> -->
+  </body>
+  </html>
+  <script type="text/javascript">
+  var clock;
+
+    $(document).ready(function() {
+
+      // Grab the current date
+      var currentDate = new Date();
+
+      // Set some date in the future. In this case, it's always Jan 1
+      var futureDate  = new Date(1564981200000);
+
+      // Calculate the difference in seconds between the future and current date
+      var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+      // Instantiate a coutdown FlipClock
+      clock = $('.clock').FlipClock(diff, {
+        clockFace: 'DailyCounter',
+        countdown: true
+      });
+    });
+  </script>

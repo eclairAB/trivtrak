@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trivtrak</title>
+  <link rel="stylesheet" type="text/css" href="source/scss/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <style type="text/css">
+    /*.row{
+      border: 1px solid green;
+    }
+
+    .col {
+      border: 1px solid red;
+    }
+
+    .container {
+      border : 3px dotted blue;
+    }*/
+  </style>
+</head>
+<body id="background">
+
+  <!-- <div class="col pt-3 col-md-12 col-xs-12 pb-3 navs-buttom"></div> -->
+
+  <div class="col py-3 welcome justify-content-center col-md-12 col-xs-12 navs-buttom">
+    <span class="text-1">welcome to vermont state</span><br/>
+    <span class="text-1">trivia championship</span>
+  </div>
+
+  <div id= "timerdiv" class="row align-items-center mt-2 mx-auto pl-4">
+
+    <div id="ln" class="col col-lg-3 col-md-12 col-sm-12 col-xs-12">
+      <div class="">
+        <h4 class="display-4 header" style="font-family: 'Bourton'; font-weight: 100; font-size: 30px;">ACTIVATE YOUR VENUE TODAY!</h4>
+      </div>
+
+      <div class="">
+        <img id="pic" src="source/assets/bbb.png" >
+      </div>
+    </div>
+
+    <div id="clockdiv" class="row col-lg-6 col-md-12 col-sm-12 col-xs-12 justify-content-center align-items-center" style="border : 3px solid rgba(255, 191, 0, 0.5);">
+      <div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3">
+        <span class="days"></span>
+        <div class="col smalltext">Days</div>
+      </div>
+
+      <div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3">
+        <span class="hours"></span>
+        <div class="col smalltext">Hours</div>
+      </div>
+
+      <div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3">
+        <span class="minutes"></span>
+        <div class="col smalltext">Minutes</div>
+      </div>
+
+      <div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3">
+        <span class="seconds"></span>
+        <div class="col smalltext">Seconds</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="btmdiv" class="row col-md-12 justify-content-center mx-auto col-xs-12">
+    <div id="ln" class="row justify-content-center col-md-12 col-xs-12">
+      <h4 class="display-4 header" style="font-family: 'Bourton'; font-weight: 100;">ACTIVATE YOUR VENUE TODAY!</h4>
+    </div>
+
+    <div id="ln" class="row col-md-12 col-xs-12 mt-3 mb-1 align-items-center justify-content-center">
+      <div class="col justify-content-center col-lg-4 col-md-12 col-sm-12 col-xs-12 py-2 px-1">  
+        <a id ="a" href="https://trivtrak.com/#/locations" role="button">
+          <button id="kerv" class="button"><h3 style="font-family: 'Bourton'">I already have trivia</h3></button>
+        </a>
+      </div>
+
+      <div class="col justify-content-center col-lg-4 col-md-12 col-sm-12 col-xs-12 p-2">  
+        <a id ="a" href="http://www.catchthemania.com/" role="button">
+          <button id="kerv" class="button"><h3 style="font-family: 'Bourton'">I do not have trivia</h3></button>
+        </a>
+      </div>
+
+      <div class="col justify-content-center col-lg-4 col-md-12 col-sm-12 col-xs-12 p-2">  
+        <a id ="a" href="#" role="button">
+          <button id="kerv" class="button"><h3 style="font-family: 'Bourton'">More info</h3></button>
+        </a>
+      </div>
+    </div>
+
+    <div class="txt-right col col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-2">
+      <a id ="a" href="#" role="button">
+        <h3 class="display-5 header" style="font-family: 'Bourton'; font-weight: 400;">Contact us</h3>
+      </a>
+    </div>
+  </div>
+
+  <!-- <div class="col pt-3 mt-5 col-xs-12 pb-3 navs-buttom"></div> -->
+
+</body>
+</html>
+<script type="text/javascript">
+function getTimeRemaining(endtime) {
+                
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
+function initializeClock(id, endtime) {
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
+
+  function updateClock() {
+    var t = getTimeRemaining(endtime);
+
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
+
+var deadline = 'August 05 2019 00:09:00 GMT+0200';
+initializeClock('clockdiv', deadline);
+</script>
