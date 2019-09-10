@@ -71,12 +71,17 @@
 }
 @media (max-width: 991px){
     .button{
-    zoom: 1.5;
+    zoom: 1;
     }
 }
 @media (max-width: 850px){
     .button{
-    zoom: 1.2;
+    zoom: 0.9;
+    }
+}
+@media (max-width: 800px){
+    .button{
+    zoom: 1;
     }
 }
 @media (max-width: 700px){
@@ -84,26 +89,41 @@
     zoom: 1;
     }
 }
+@media (max-width: 650px){
+    .button{
+    zoom: 0.9;
+    }
+}
 @media (max-width: 600px){
     .button{
     zoom: 0.8;
     }
 }
-@media (max-width: 500px){
+@media (max-width: 550px){
     .button{
     zoom: 0.7;
     }
 }
+@media (max-width: 500px){
+    .button{
+    zoom: 0.53;
+    }
+}
 @media (max-width: 450px){
     .button{
-    zoom: 0.6;
+    zoom: 0.5;
     }
 }
 @media (max-width: 400px){
     .button{
-    zoom: 0.5;
+    zoom: 0.4;
     }
-}   
+}
+@media (max-width: 350px){
+    .button{
+    zoom: 0.3;
+    }
+}  
 
 .button:focus { outline:0; }
 

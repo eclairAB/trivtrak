@@ -10253,6 +10253,12 @@ body#background {
   font-size: 60px;
 }
 
+.t-date {
+  font-family: "Bourton";
+  font-weight: 100;
+  font-size: 40px;
+}
+
 #pic {
   left: 25%;
   height: 420px;
@@ -10278,18 +10284,6 @@ body#background {
 }
 
 #btmdiv {
-  /*height: 300px;*/
-  width: 100%;
-  text-align: center;
-}
-
-#btmdiv_ii {
-  /*height: 700px;*/
-  width: 100%;
-  text-align: center;
-}
-
-#btmdiv_iii {
   /*height: 300px;*/
   width: 100%;
   text-align: center;
@@ -10409,7 +10403,7 @@ a:hover {
     background-color: #ffbf00;
   }
   .navs-buttom .text-1 {
-    font-size: 11vw;
+    font-size: 9vw;
   }
 
   .topdiv {
@@ -10440,6 +10434,12 @@ a:hover {
     font-size: 25px;
   }
 
+  .t-date {
+    font-family: "Bourton";
+    font-weight: 100;
+    font-size: 15px;
+  }
+
   /*---------------------------------timer--------------------------------------*/
   .a-venue {
     font-family: "Bourton";
@@ -10453,6 +10453,18 @@ a:hover {
     color: white;
     font-size: 20px;
     text-decoration: underline;
+  }
+}
+@media (max-width: 500px) {
+  #clockdiv {
+    font-family: "Bourton";
+    color: #fff;
+    font-weight: 100;
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 50px;
+    height: 185px;
+    border: 3px solid rgba(255, 191, 0, 0.5);
   }
 }
 .call-to-action {
@@ -10629,12 +10641,17 @@ header.masthead h1 {
 }
 @media (max-width: 991px) {
   .button {
-    zoom: 1.5;
+    zoom: 1;
   }
 }
 @media (max-width: 850px) {
   .button {
-    zoom: 1.2;
+    zoom: 0.9;
+  }
+}
+@media (max-width: 800px) {
+  .button {
+    zoom: 1;
   }
 }
 @media (max-width: 700px) {
@@ -10642,24 +10659,39 @@ header.masthead h1 {
     zoom: 1;
   }
 }
+@media (max-width: 650px) {
+  .button {
+    zoom: 0.9;
+  }
+}
 @media (max-width: 600px) {
   .button {
     zoom: 0.8;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .button {
     zoom: 0.7;
   }
 }
+@media (max-width: 500px) {
+  .button {
+    zoom: 0.53;
+  }
+}
 @media (max-width: 450px) {
   .button {
-    zoom: 0.6;
+    zoom: 0.5;
   }
 }
 @media (max-width: 400px) {
   .button {
-    zoom: 0.5;
+    zoom: 0.4;
+  }
+}
+@media (max-width: 350px) {
+  .button {
+    zoom: 0.3;
   }
 }
 .button:focus {
@@ -10677,11 +10709,11 @@ header.masthead h1 {
 }
 
 /*clock*/
-@media (max-width: 2000px) {
-  .clock {
-    zoom: 1.5;
-  }
-}
+/*@media (max-width: 2000px){
+	.clock{
+	zoom: 1.;
+	}
+}*/
 @media (max-width: 1650px) {
   .clock {
     zoom: 1.2;

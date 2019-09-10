@@ -154,6 +154,12 @@ body#background {
   font-size: 60px;
 }
 
+.t-date {
+  font-family: 'Bourton';
+  font-weight: 100;
+  font-size: 40px;
+}
+
 #pic {
   left: 25%;
   height: 420px;
@@ -178,18 +184,6 @@ body#background {
 }
 
 #btmdiv {
-  /*height: 300px;*/
-  width: 100%;
-  text-align: center;
-}
-
-#btmdiv_ii {
-  /*height: 700px;*/
-  width: 100%;
-  text-align: center;
-}
-
-#btmdiv_iii {
   /*height: 300px;*/
   width: 100%;
   text-align: center;
@@ -299,7 +293,7 @@ a:hover{
   text-decoration-color: #ffbf00;
 }
 
- @media (max-width: 500px){
+@media (max-width: 500px){
 
 /*  #kerv {
     font-size: 1px;
@@ -311,7 +305,7 @@ a:hover{
   .navs-buttom {
     background-color: #ffbf00;
      .text-1{
-      font-size: 11vw;
+      font-size: 9vw;
     }
   }
 
@@ -341,6 +335,12 @@ a:hover{
     font-weight: 100;
     font-size: 25px;
   }
+
+  .t-date {
+  font-family: 'Bourton';
+  font-weight: 100;
+  font-size: 15px;
+}
 /*---------------------------------timer--------------------------------------*/
   .a-venue {
     font-family: 'Bourton';
@@ -355,4 +355,19 @@ a:hover{
     font-size: 20px;
     text-decoration: underline;
   }
+}
+
+@media (max-width: 500px){
+
+    #clockdiv {
+    font-family: 'Bourton';
+    color: #fff;
+    font-weight: 100;
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 50px;
+    height: 185px;
+    border : 3px solid rgba(255, 191, 0, 0.5);
+  }
+
 }

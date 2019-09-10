@@ -35,8 +35,8 @@
   <body id="background" style="-webkit-text-size-adjust: 100%;">
 
     <div class="col py-3 welcome justify-content-center col-md-12 col-xs-12 navs-buttom">
-      <span class="text-1">VT state trivia</span><br/>
-      <span class="text-1">championship</span>
+      <span class="text-1">The Labatt VT State</span><br/>
+      <span class="text-1">trivia championship</span>
     </div>
 
     <div class="align-items-center" class="topdiv">
@@ -62,6 +62,10 @@
               <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 justify-content-center align-items-center">
                 <p class="t-start">TOURNAMENT START</p>
               </div>
+
+              <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 justify-content-center align-items-center">
+                <p class="t-date">9/24/19</p>
+              </div>
    
               <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 justify-content-center align-items-center">
                 <div class="clock d-flex justify-content-center"></div>
@@ -80,23 +84,37 @@
           <div class="col-4">  
             <a id ="a" href="https://trivtrak.com/#/locations" role="button">
               <button id="kerv" class="button">
-                I Have Trivia
+                I Have Trivia <br> <b style="color: #00509b;"> Free </b>
               </button>
             </a>
           </div>
 
-          <div class="col-5">  
+          <div class="col-4">  
             <a id ="a" href="http://www.catchthemania.com/" role="button">
               <button id="kerv" class="button">
-                I Don't Have Trivia
+
+                <!-- <div class="row">
+                  <div class="col-8 d-flex flex-column justify-content-center">
+                    I Need Trivia 
+                  </div> 
+                  <div class="">
+                      $99 <br/> 
+                    <strike> $400 </strike> 
+                  </div> 
+                </div> -->
+                I Want Trivia 
+
+                <div class="">
+                    <strike style="color: red;">$400</strike> <b style="color: #00509b;"> $99 </b>
+                  </div> 
               </button>
             </a>
           </div>
 
-          <div class="col-3">  
+          <div class="col-4">  
             <a id ="a" href="https://trivtrak.com/#/tournaments" role="button">
               <button id="kerv" class="button">
-                More Info
+                Tournament <br> Info
               </button>
             </a>
           </div>
@@ -122,7 +140,7 @@
       var currentDate = new Date();
 
       // Set some date in the future. In this case, it's always Jan 1
-      var futureDate  = new Date(1564981200000);
+      var futureDate  = new Date(1569297600000);
 
       // Calculate the difference in seconds between the future and current date
       var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
